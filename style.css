@@ -71,7 +71,7 @@ body, h1, h2, ul, li {
 
 .big-text-1 {
     font-family: 'Druk Wide Bold', sans-serif;
-    font-size: 10px; /* Adjust this value */
+    font-size: 60px; /* Adjust this value */
     letter-spacing: 2px;
     text-transform: uppercase;
     text-align: center;
