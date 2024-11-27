@@ -20,7 +20,7 @@ body, h1, h2, ul, li {
     position: relative;
     text-align: center;
     color: white;
-    height: 70vh;
+    /*height: 70vh;*/
     background: black;
     overflow: hidden;
 }
