@@ -75,23 +75,32 @@
   display: flex;
   align-items: center;
   justify-content: center; /* Center navbar content */
-  padding: 15px 30px;
+  padding: 0px 30px;
   background-color: #B3CEE5; /* Blue */
   color: #fff;
   position: fixed;
-    height: 50px;
+    height: 70px;
   width: 100%;
   z-index: 3;
 }
 
 /* Logo styling */
-.logo img {
-  height: 50px; 
-    gap: 20px;/* Adjust based on your logo */
-  position: absolute; /* Keeps logo on the left */
-  left: 30px; /* Adjust based on desired spacing */
+.logo {
+  gap: 20px;/* Adjust based on your logo */
+  display: flex;
+  left: 30px;
+  align-items: center;
+  /*position: absolute; /* Keeps logo on the left */
+  height: 100%; /* Ensures it aligns properly within the navbar height */
 }
-
+.logo-2 {
+  gap: 20px;/* Adjust based on your logo */
+  display: flex;
+  left: 30px;
+  align-items: center;
+  position: absolute; /* Keeps logo on the left */
+  height: 100%; /* Ensures it aligns properly within the navbar height */
+}
 /* Navigation links styling */
 .nav-links {
   display: flex;
@@ -152,6 +161,9 @@
     <nav class="navbar">
     <div class="logo">
       <img src="logo_MPPD.png" alt="Logo">
+    </div>
+        <div class="logo-2">
+      <img src="virtualtourismlogo.png" alt="Logo">
     </div>
     <ul class="nav-links">
       <li><a href="#pantai">PANTAI</a></li>
