@@ -20,7 +20,7 @@ body, h1, h2, ul, li {
     position: relative;
     text-align: center;
     color: white;
-    /*height: 70vh;*/
+    height: 100vh;
     background: black;
     overflow: hidden;
 }
@@ -85,20 +85,19 @@ body, h1, h2, ul, li {
   z-index: 3;
 }
         
-.logo,
-.logo-2 {
+.logo, .logo-2 {
   position: absolute; /* Keeps both logos positioned independently */
   display: flex;
   align-items: center;
-  height: 100%; /* Ensures vertical alignment within the navbar height */
+  /*height: 100%; /* Ensures vertical alignment within the navbar height */
   /*transform: scale(1.5);*/
 }
 
-/* Logo styling */
+/* Logo styling 
 .logo {
   left: 30px;
     transform: scale(1.5);
-}
+}*/
         
 .logo-2 {
   /*gap: 20px;/* Adjust based on your logo */
