@@ -148,3 +148,24 @@ body, h1, h2, ul, li {
   padding: 15px;
   transition: background-color 0.2s;*/
 }
+
+.grid-block {
+    background-color: #fff;
+    border: 2px solid #000;
+    border-radius: 20px;
+    padding: 8px;
+    max-width: min-content;
+    opacity: 0;
+    transform: translate3d(0, 50px, 0);
+    transition: transform 1s ease, opacity 1s ease;
+}
+
+.problem-grid {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 7vh;
+    gap: 7vh;
+    position: relative;
+    overflow: hidden;
+}
