@@ -88,18 +88,18 @@ body, h1, h2, ul, li {
 .logo, .logo-2 {
   position: absolute; /* Keeps both logos positioned independently */
   display: flex;
-  align-items: center;
+  /*align-items: center;*/
   left: 30px;
-  transform: scale(1.2);
+  
   /*height: 100%; /* Ensures vertical alignment within the navbar height */
   /*transform: scale(1.5);*/
 }
 
-/* Logo styling 
+ Logo styling 
 .logo {
   left: 30px;
-    transform: scale(1.5);
-}*/
+    transform: scale(1.2);
+}
         
 .logo-2 {
   /*gap: 20px;/* Adjust based on your logo */
