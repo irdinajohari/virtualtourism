@@ -169,6 +169,10 @@ body, h1, h2, ul, li {
     position: relative;
     overflow: hidden;
 }
+
+.grid-block img {
+    width: fit-content;
+}
 @media screen and (max-width: 700px) {
 //coding untuk adjust responsiveness
 }
