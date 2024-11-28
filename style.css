@@ -169,6 +169,6 @@ body, h1, h2, ul, li {
     position: relative;
     overflow: hidden;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 700px) {
 //coding untuk adjust responsiveness
 }
