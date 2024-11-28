@@ -152,8 +152,8 @@ body, h1, h2, ul, li {
 .grid-block {
     background-color: #fff;
     border: 2px solid #000;
-    border-radius: 20px;
-    padding: 8px;
+    border-radius: 5px;
+    padding: 6px;
     max-width: min-content;
     opacity: 0;
     transform: translate3d(0, 50px, 0);
@@ -164,8 +164,8 @@ body, h1, h2, ul, li {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 7vh;
-    gap: 7vh;
+    margin: 12vh;
+    gap: 11vh;
     position: relative;
     overflow: hidden;
 }
