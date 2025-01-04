@@ -185,11 +185,15 @@ body, h1, h2, ul, li {
       display: flex;
       margin: 50px;
       gap: 20px;
+      align-items: stretch;
     }
 
     /* Bahagian kiri (teks) */
     .left {
       flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
     }
 
     .left h1 {
@@ -217,6 +221,7 @@ body, h1, h2, ul, li {
       gap: 20px;
       justify-items: center;
       align-items: center;
+      align-content: stretch;
       padding: 20px 0 0 0;
       margin: 80px;
     }
@@ -234,7 +239,10 @@ body, h1, h2, ul, li {
     }
 
     .box img {
-        width: 350px;
+      width: 350px;
+      height: auto;
+      max-width: 350px;
+      max-height: 100%;
     }
 @media screen and (max-width: 700px) {
 //coding untuk adjust responsiveness
