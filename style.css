@@ -264,7 +264,7 @@ body, h1, h2, ul, li {
 }
 
 .program-item {
-    flex: 1 1 calc(50% - 30px);
+    flex: 1 1 calc(48%);
     background-color: white;
     border: 1px solid #ddd;
     padding: 20px;
@@ -296,7 +296,7 @@ body, h1, h2, ul, li {
 }
 
 @media (max-width: 768px) {
-    .program-row {
-        flex-direction: column;
+    .program-item {
+            flex: 1 1 100%; /* Tukar kepada 1 baris per item untuk skrin kecil */
     }
 }
