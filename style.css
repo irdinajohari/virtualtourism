@@ -218,7 +218,6 @@ body, h1, h2, ul, li {
       gap: 20px;
       justify-items: center;
       align-items: center;
-      transform: scale(1.2);
       padding: 20px 0 0 0;
       margin: 80px;
     }
