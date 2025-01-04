@@ -193,6 +193,10 @@ body, h1, h2, ul, li {
     }
 
     .left h1 {
+      font-family: "Playfair Display", serif;
+      font-optical-sizing: auto;
+      font-weight: <weight>;
+      font-style: normal;
       font-size: 2.5rem;
       margin: 0;
     }
