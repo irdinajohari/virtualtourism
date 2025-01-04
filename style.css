@@ -183,7 +183,7 @@ body, h1, h2, ul, li {
  /* Layout grid */
     .content {
       display: flex;
-      padding: 20px;
+      margin: 30px;
       gap: 20px;
     }
 
@@ -218,7 +218,7 @@ body, h1, h2, ul, li {
     justify-items: center;
     align-items: center;
     transform: scale(1.2);
-    margin: 50px 50px 0 0;
+    padding: 20px 0 0 0;
     }
 
     .box {
