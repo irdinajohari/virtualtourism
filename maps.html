@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Port Dickson Beaches</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha384-IhBqGVv6gVt0Xk6CNeEr5CdCkMbwZ40uKZNIUFO2LJovGkCJFMn0n0v94Wn3DiGz" crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha384-sA+oYlxrR+iNezBxlVoFxa4ROvsRAO+h3ns6G5R0jxv8vtzXp3n1R6kHx6jv7Bak" crossorigin=""></script>
+    <style>
+        #map {
+            height: 100vh;
+        }
+    </style>
+</head>
+<body>
+    <div id="map"></div>
+
+    <script>
+        // Initialize the map and set its view to Port Dickson
+        const map = L.map('map').setView([2.52, 101.84], 13);
+
+        // Add OpenStreetMap tiles
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 19,
+            attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors'
+        }).addTo(map);
+
+        // List of beaches with coordinates and Google Maps links
+        const beaches = [
+            { name: "Pantai Cahaya Negeri", coords: [2.492444804052905, 101.83977477194757], link: "https://maps.app.goo.gl/27kgEACXfYaN1g5a8" },
+            { name: "Pantai Tanjung Gemuk", coords: [2.5458663718029455, 101.79886113180257], link: "https://maps.app.goo.gl/D6raPRJ1BRvodtFJ8" },
+            { name: "Pantai Bagan Pinang", coords: [2.5101828414599163, 101.82850484126621], link: "https://maps.app.goo.gl/2LnKNKWCppnopE9W7" },
+            { name: "Pantai Saujana", coords: [2.5012759203308117, 101.8372326342601], link: "https://maps.app.goo.gl/LZi2MKbnDnpaoypz5" },
+            { name: "Pantai Teluk Kemang", coords: [2.454756471014375, 101.85514819184618], link: "https://maps.app.goo.gl/wTytXEyXn2k1ku5A6" },
+            { name: "Pantai Purnama", coords: [2.444207078899493, 101.85611881796878], link: "https://maps.app.goo.gl/ndAUcTdbakmKN13P9" },
+            { name: "Pantai Cermin", coords: [2.4147048644543205, 101.85873930968418], link: "https://maps.app.goo.gl/jxb3LDSaEQfPyzpn7" },
+            { name: "Pantai Tanjung Biru", coords: [2.4172717477245134, 101.85672768671958], link: "https://maps.app.goo.gl/gJmhGJypScZPB9KV6" }
+        ];
+
+        // Add markers for each beach
+        beaches.forEach(beach => {
+            L.marker(beach.coords).addTo(map)
+                .bindPopup(`<b>${beach.name}</b><br><a href="${beach.link}" target="_blank">Open in Google Maps</a>`);
+        });
+    </script>
+</body>
+</html>
