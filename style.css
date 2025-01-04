@@ -245,8 +245,9 @@ body, h1, h2, ul, li {
       max-height: 100%;
     }
 
-    .map {
+    #map {
       height: 100vh;
+      width: 100%;
     }
 @media screen and (max-width: 700px) {
 //coding untuk adjust responsiveness
