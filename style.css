@@ -211,7 +211,7 @@ body, h1, h2, ul, li {
 
     /* Bahagian kanan (grid gambar) */
     .right {
-      flex: 2;
+      flex: 1;
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       gap: 20px;
