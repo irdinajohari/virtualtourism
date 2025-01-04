@@ -264,7 +264,7 @@ body, h1, h2, ul, li {
 }
 
 .program-item {
-    flex: 1 1 calc(48%);
+    flex: 1 1 calc(40%);
     background-color: white;
     border: 1px solid #ddd;
     padding: 20px;
