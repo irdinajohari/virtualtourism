@@ -203,8 +203,9 @@ body, h1, h2, ul, li {
     }
 
     .left p {
-      color: #e74c3c;
-      font-size: 1rem;
+      color: #36454F;
+      font-family: "Raleway", serif;
+      font-size: 2rem;
       font-weight: bold;
       margin-top: 10px;
     }
