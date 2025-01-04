@@ -260,7 +260,7 @@ body, h1, h2, ul, li {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    gap: 30px;
+    gap: 20px;
 }
 
 .program-item {
