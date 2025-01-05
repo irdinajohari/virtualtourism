@@ -296,8 +296,28 @@ body, h1, h2, ul, li {
     object-fit: cover;
 }
 
-@media (max-width: 768px) {
+/* Untuk tablet (saiz skrin sederhana) */
+@media (max-width: 1024px) {
     .program-item {
-            flex: 1 1 100%; /* Tukar kepada 1 baris per item untuk skrin kecil */
+        flex: 1 1 calc(50% - 10px); /* Kurangkan jarak */
+    }
+}
+
+/* Untuk telefon bimbit (saiz skrin kecil) */
+@media (max-width: 600px) {
+    .program-item {
+        flex: 1 1 100%; /* Susun satu item per baris */
+    }
+
+    .navbar ul {
+        flex-direction: column; /* Navigasi menegak */
+        gap: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column; /* Tukar ke arah menegak */
+        gap: 10px; /* Tambahkan jarak */
     }
 }
