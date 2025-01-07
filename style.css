@@ -4,6 +4,7 @@ body, h1, h2, ul, li {
     padding: 0;
     list-style: none;
     font-family: 'Oswald', sans-serif;
+     background-color: ##CCCCFF; /*light blue*/
 }
 
 .big-text-1 {
@@ -78,7 +79,7 @@ body, h1, h2, ul, li {
   align-items: center;
   justify-content: center; /* Center navbar content */
   padding: 0px 30px;
-  background-color: #B3CEE5; /* Blue */
+  background-color: #000080; /* Blue */
   color: #fff;
   position: fixed;
   height: 70px;
@@ -133,7 +134,7 @@ body, h1, h2, ul, li {
 
 .nav-links a {
   text-decoration: none;
-  color: black;
+  color: white;
   font-size: 16px;
   padding: 15px;-->
   transition: background-color 0.2s;
