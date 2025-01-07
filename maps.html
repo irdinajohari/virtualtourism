@@ -36,7 +36,7 @@
             attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors'
         }).addTo(map);
 
-        // List of beaches with coordinates and Google Maps links
+       // List of beaches with coordinates and Google Maps links
         const beaches = [
             { name: "Pantai Cahaya Negeri", coords: [2.492444804052905, 101.83977477194757], link: "https://maps.app.goo.gl/27kgEACXfYaN1g5a8" },
             { name: "Pantai Tanjung Gemuk", coords: [2.5458663718029455, 101.79886113180257], link: "https://maps.app.goo.gl/D6raPRJ1BRvodtFJ8" },
@@ -45,10 +45,11 @@
             { name: "Pantai Teluk Kemang", coords: [2.454756471014375, 101.85514819184618], link: "https://maps.app.goo.gl/wTytXEyXn2k1ku5A6" },
             { name: "Pantai Purnama", coords: [2.444207078899493, 101.85611881796878], link: "https://maps.app.goo.gl/ndAUcTdbakmKN13P9" },
             { name: "Pantai Cermin", coords: [2.4147048644543205, 101.85873930968418], link: "https://maps.app.goo.gl/jxb3LDSaEQfPyzpn7" },
-            { name: "Pantai Tanjung Biru", coords: [2.4172717477245134, 101.85672768671958], link: "https://maps.app.goo.gl/gJmhGJypScZPB9KV6" }
-            { name: "Pantai Dickson", coords: [2.4185733599268175, 101.89789929836697], link: "https://maps.app.goo.gl/1PAfpjgRPN7tqeLM8" }
+            { name: "Pantai Tanjung Biru", coords: [2.4172717477245134, 101.85672768671958], link: "https://maps.app.goo.gl/gJmhGJypScZPB9KV6" },
+            { name: "Pantai Dickson", coords: [2.4185733599268175, 101.89789929836697], link: "https://maps.app.goo.gl/1PAfpjgRPN7tqeLM8" },
             { name: "Rumah abang nizam", coords: [2.5343371642998793, 101.8046117533709], link: "https://maps.app.goo.gl/ZpoP7Bsy12AAJXUC9" }
         ];
+
 
         // Add markers for each beach
         beaches.forEach(beach => {
