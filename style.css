@@ -144,7 +144,7 @@ body, h1, h2, ul, li {
 
 .nav-links a:hover {
   /*background-color: #1d1d1d;  Tukar warna pada hover jika mahu */
-  opacity: 0.8;
+  opacity: 0.1;
   transition: all ease 0.5s;
 }
 
