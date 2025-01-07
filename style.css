@@ -197,7 +197,8 @@ body, h1, h2, ul, li {
     }
 
     .left h1 {
-      font-family: "Playfair Display", serif;
+      font-family: "Poppins", serif;
+      font-weight: 700;
       font-optical-sizing: auto;
       font-style: normal;
       font-size: 55px;
