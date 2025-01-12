@@ -48,18 +48,41 @@
 
         // Locations by category
         const beaches = [
-            { name: "Pantai Cahaya Negeri", coords: [2.4924, 101.8398], link: "https://maps.app.goo.gl/27kgEACXfYaN1g5a8" },
-            { name: "Pantai Tanjung Gemuk", coords: [2.5459, 101.7989], link: "https://maps.app.goo.gl/D6raPRJ1BRvodtFJ8" },
+            { name: "Pantai Cahaya Negeri", coords: [2.492444804052905, 101.83977477194757], link: "https://maps.app.goo.gl/27kgEACXfYaN1g5a8" },
+            { name: "Pantai Tanjung Gemuk", coords: [2.5458663718029455, 101.79886113180257], link: "https://maps.app.goo.gl/D6raPRJ1BRvodtFJ8" },
+            { name: "Pantai Bagan Pinang", coords: [2.5101828414599163, 101.82850484126621], link: "https://maps.app.goo.gl/2LnKNKWCppnopE9W7" },
+            { name: "Pantai Saujana", coords: [2.5012759203308117, 101.8372326342601], link: "https://maps.app.goo.gl/LZi2MKbnDnpaoypz5" },
+            { name: "Pantai Teluk Kemang", coords: [2.454756471014375, 101.85514819184618], link: "https://maps.app.goo.gl/wTytXEyXn2k1ku5A6" },
+            { name: "Pantai Purnama", coords: [2.444207078899493, 101.85611881796878], link: "https://maps.app.goo.gl/ndAUcTdbakmKN13P9" },
+            { name: "Pantai Cermin", coords: [2.4147048644543205, 101.85873930968418], link: "https://maps.app.goo.gl/jxb3LDSaEQfPyzpn7" },
+            { name: "Pantai Tanjung Biru", coords: [2.4172717477245134, 101.85672768671958], link: "https://maps.app.goo.gl/gJmhGJypScZPB9KV6" },
+            { name: "Pantai Dickson", coords: [2.4185733599268175, 101.89789929836697], link: "https://maps.app.goo.gl/1PAfpjgRPN7tqeLM8" },
+            { name: "Pantai Batu 5", coords: [2.4834845164406922, 101.8477829689083], link: "https://maps.app.goo.gl/v7ys7ZvHr1kx8M3aA" },
         ];
 
         const attractions = [
-            { name: "Army Museum", coords: [2.5154, 101.8171], link: "https://maps.app.goo.gl/armyMuseum" },
-            { name: "Cape Rachado Lighthouse", coords: [2.4070, 101.8563], link: "https://maps.app.goo.gl/capeRachado" },
+            { name: "Muzium Tentera Darat", coords: [2.4965211959378104, 101.84715558194566], link: "https://maps.app.goo.gl/8aEXEJpx54F4FDzf9" },
+            { name: "Muzium Kota Lukut", coords: [2.569031076537177, 101.82422388175789], link: "https://maps.app.goo.gl/z5A5WWUMLxbWdcty8" },
+            { name: "PD Forest Sg Menyala", coords: [2.4986363142965087, 101.88601659525175], link: "https://maps.app.goo.gl/P2YPMd2DqBGWkXzS9" },
+            { name: "PD Ostrich Show Farm", coords: [2.4465490215019425, 101.86271462593398], link: "https://maps.app.goo.gl/XbwAaFnNqr8sHgvn8" },
+            { name: "Pusat Ikan Hiasan", coords: [2.463292413820648, 101.85038522408693], link: "https://maps.app.goo.gl/nuBpXBs1gKb5DVK18" },
+            { name: "Balai Cerap Baitul Hilal", coords: [2.4452624788825243, 101.8547608817574], link: "https://maps.app.goo.gl/mz4sfe8eC26roUVP6" },
+            { name: "Rumah Api Tanjung Tuan", coords: [2.4074650679732543, 101.85227223034346], link: "https://maps.app.goo.gl/RWKa9RLoBDKpHvM89" },
+            { name: "Balai Cerap Baitu; Hilal", coords: [2.4452624788825243, 101.8547608817574], link: "https://maps.app.goo.gl/mz4sfe8eC26roUVP6" },
+            { name: "Alive 3D Art Gallery", coords: [2.559992778136481, 101.81748765292255], link: "https://maps.app.goo.gl/svhfrrdFbyeMm7QR8" },
+            
         ];
 
         const foodPlaces = [
-            { name: "Pak Su Seafood", coords: [2.5273, 101.8069], link: "https://maps.app.goo.gl/pakSuSeafood" },
-            { name: "Restoran Seri Mesra", coords: [2.4521, 101.8558], link: "https://maps.app.goo.gl/seriMesra" },
+            { name: "Restoran Deen Berjaya", coords: [2.5255505631881277, 101.79541923942827], link: "https://maps.app.goo.gl/aFgD41xTLSc9enfh9" },
+            { name: "Kafe Kampung Kaw", coords: [2.502871132306534, 101.85839187011062], link: "https://maps.app.goo.gl/WoNTwnbzuwBqZMcL8" },
+            { name: "King's Char Kuey Teow", coords: [2.4951605401212555, 101.8403330952517], link: "https://maps.app.goo.gl/ihtJ5K4tPMwwHT6F7" },
+            { name: "Restoran Kulit Kayu Manis", coords: [2.5566957331927025, 101.80752125107546], link: "https://maps.app.goo.gl/5i1D4YAYgGA7gWo6A" },
+            { name: "Warung Mak Mah Nasi Ayam", coords: [2.526374086547965, 101.80501169340475], link: "https://maps.app.goo.gl/92VggaNUYijHLs6d8" },
+            { name: "Warung Salai", coords: [2.5260354129846356, 101.81192278175777], link: "https://maps.app.goo.gl/XB6mmocthR92RhPM9" },
+            { name: "Embok Village Steamboat & Seafood", coords: [2.5139336047116494, 101.82629439525171], link: "https://maps.app.goo.gl/CKZnjHUe1FTXJvaC6" },
+            { name: "Mient's Burger", coords: [2.526082239323584, 101.8030034529224], link: "https://maps.app.goo.gl/mu51d6xQiAPMzY3Y8" },
+            { name: "Medan Ikan Bakar MPPD", coords: [2.5372239355837785, 101.7957936817577], link: "https://maps.app.goo.gl/ra1rkNe4xWzZpqnH9" },
         ];
 
         // Add markers to the map
