@@ -246,11 +246,33 @@ body, h1, h2, ul, li {
       max-height: 100%;
     }
 
-    #map {
-      height: 100vh;
-      width: 100%;
+   #map {
+            height: 90vh;
+            margin: 20px;
+        }
+    .legend {
+            background: white;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.2);
     }
 
+    .legend div {
+            margin-bottom: 5px;
+    }
+
+    .legend span {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            margin-right: 5px;
+            border-radius: 3px;
+        }
+ 
+     .blue { background: blue; }
+     .green { background: green; }
+     .yellow { background: yellow; }
+    
  .program-container {
        max-width: 1200px;
        margin: 50px auto;
