@@ -24,7 +24,12 @@
       <li><a href="maps.html">MAPS</a></li>
     </ul>
   </nav>
-    <div id="map"></div>
+   <div id="map"></div>
+    <div class="legend">
+        <div><span class="blue"></span>Beaches</div>
+        <div><span class="green"></span>Attractions</div>
+        <div><span class="yellow"></span>Food Places</div>
+    </div>
 
     <script>
         // Initialize the map and set its view to Port Dickson
@@ -36,27 +41,39 @@
             attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors'
         }).addTo(map);
 
-       // List of beaches with coordinates and Google Maps links
+        // Custom marker icons
+        const beachIcon = L.icon({ iconUrl: 'https://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png', iconSize: [32, 32] });
+        const attractionIcon = L.icon({ iconUrl: 'https://maps.gstatic.com/mapfiles/ms2/micons/green-dot.png', iconSize: [32, 32] });
+        const foodIcon = L.icon({ iconUrl: 'https://maps.gstatic.com/mapfiles/ms2/micons/yellow-dot.png', iconSize: [32, 32] });
+
+        // Locations by category
         const beaches = [
-            { name: "Pantai Cahaya Negeri", coords: [2.492444804052905, 101.83977477194757], link: "https://maps.app.goo.gl/27kgEACXfYaN1g5a8" },
-            { name: "Pantai Tanjung Gemuk", coords: [2.5458663718029455, 101.79886113180257], link: "https://maps.app.goo.gl/D6raPRJ1BRvodtFJ8" },
-            { name: "Pantai Bagan Pinang", coords: [2.5101828414599163, 101.82850484126621], link: "https://maps.app.goo.gl/2LnKNKWCppnopE9W7" },
-            { name: "Pantai Saujana", coords: [2.5012759203308117, 101.8372326342601], link: "https://maps.app.goo.gl/LZi2MKbnDnpaoypz5" },
-            { name: "Pantai Teluk Kemang", coords: [2.454756471014375, 101.85514819184618], link: "https://maps.app.goo.gl/wTytXEyXn2k1ku5A6" },
-            { name: "Pantai Purnama", coords: [2.444207078899493, 101.85611881796878], link: "https://maps.app.goo.gl/ndAUcTdbakmKN13P9" },
-            { name: "Pantai Cermin", coords: [2.4147048644543205, 101.85873930968418], link: "https://maps.app.goo.gl/jxb3LDSaEQfPyzpn7" },
-            { name: "Pantai Tanjung Biru", coords: [2.4172717477245134, 101.85672768671958], link: "https://maps.app.goo.gl/gJmhGJypScZPB9KV6" },
-            { name: "Pantai Dickson", coords: [2.4185733599268175, 101.89789929836697], link: "https://maps.app.goo.gl/1PAfpjgRPN7tqeLM8" },
-            { name: "Pantai Batu 5", coords: [2.4834845164406922, 101.8477829689083], link: "https://maps.app.goo.gl/v7ys7ZvHr1kx8M3aA" },
-            
+            { name: "Pantai Cahaya Negeri", coords: [2.4924, 101.8398], link: "https://maps.app.goo.gl/27kgEACXfYaN1g5a8" },
+            { name: "Pantai Tanjung Gemuk", coords: [2.5459, 101.7989], link: "https://maps.app.goo.gl/D6raPRJ1BRvodtFJ8" },
         ];
 
+        const attractions = [
+            { name: "Army Museum", coords: [2.5154, 101.8171], link: "https://maps.app.goo.gl/armyMuseum" },
+            { name: "Cape Rachado Lighthouse", coords: [2.4070, 101.8563], link: "https://maps.app.goo.gl/capeRachado" },
+        ];
 
-        // Add markers for each beach
-        beaches.forEach(beach => {
-            L.marker(beach.coords).addTo(map)
-                .bindPopup(`<b>${beach.name}</b><br><a href="${beach.link}" target="_blank">Open in Google Maps</a>`);
-        });
+        const foodPlaces = [
+            { name: "Pak Su Seafood", coords: [2.5273, 101.8069], link: "https://maps.app.goo.gl/pakSuSeafood" },
+            { name: "Restoran Seri Mesra", coords: [2.4521, 101.8558], link: "https://maps.app.goo.gl/seriMesra" },
+        ];
+
+        // Add markers to the map
+        function addMarkers(locations, icon) {
+            locations.forEach(location => {
+                L.marker(location.coords, { icon: icon })
+                    .addTo(map)
+                    .bindPopup(`<b>${location.name}</b><br><a href="${location.link}" target="_blank">Open in Google Maps</a>`);
+            });
+        }
+
+        addMarkers(beaches, beachIcon);
+        addMarkers(attractions, attractionIcon);
+        addMarkers(foodPlaces, foodIcon);
     </script>
 </body>
 </html>
