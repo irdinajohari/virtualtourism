@@ -247,8 +247,8 @@ body, h1, h2, ul, li {
     }
 
    #map {
-            height: 90vh;
-            margin: 20px;
+            height: 105vh;
+            margin: 0px;
         }
     .legend {
         position: absolute;
