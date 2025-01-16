@@ -347,10 +347,9 @@ body, h1, h2, ul, li {
   margin-top: 10px;
 }
 
-.card:hover .badge {
+.card:hover {
   transform: translateY(-10px);
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
-    display: block;
 }
 
 p {
