@@ -322,6 +322,50 @@ body, h1, h2, ul, li {
     object-fit: cover;
 }
 
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin: 20px;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  padding: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+p {
+  color: #555;
+  font-size: 0.9em;
+}
+
+h3 {
+  font-size: 1.5em;
+  margin: 0;
+}
+
+h4 {
+  margin-top: 20px;
+  color: #333;
+}
+
 /* Untuk tablet (saiz skrin sederhana) */
 @media (max-width: 1024px) {
     .program-item {
