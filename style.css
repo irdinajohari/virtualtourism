@@ -382,6 +382,65 @@ h4 {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
+        .container1 {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h5 {
+            font-family: "Roboto", serif;
+            text-align: center;
+            font-size: 36px;
+            margin-bottom: 40px;
+            color: #5a3d2f;
+        }
+
+        .restaurant-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .restaurant-card {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .restaurant-card img {
+            width: 100%;
+            height: auto;
+        }
+
+        .restaurant-info {
+            padding: 15px;
+        }
+
+        .restaurant-info h2 {
+            font-size: 20px;
+            margin: 0 0 10px;
+            color: #5a3d2f;
+        }
+
+        .restaurant-info p {
+            margin: 5px 0;
+            font-size: 16px;
+        }
+
+        .restaurant-info .phone {
+            font-weight: bold;
+            color: #000;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 28px;
+            }
+        }
+
 /* Untuk tablet (saiz skrin sederhana) */
 @media (max-width: 1024px) {
     .program-item {
