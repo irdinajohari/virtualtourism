@@ -353,10 +353,11 @@ body, h1, h2, ul, li {
 }
 
 .card-title {
+  font-family: "Crimson Text", serif;
+  font-weight: 700;
   position: relative; /* Pastikan ia dalam konteks elemen .card */
   top: 5px; /* Laraskan untuk letak di bawah imej */
   font-size: 60px; /* Besarkan teks */
-  font-weight: bold; /* Tebalkan teks */
   color: #333; /* Laraskan warna */
   text-align: center;
 }
