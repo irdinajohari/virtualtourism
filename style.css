@@ -352,20 +352,20 @@ body, h1, h2, ul, li {
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
 }
 
-p {
+.p {
   font-family: 'Playfair Display', serif;
   color: #555;
   font-size: 0.9em;
 }
 
-h3 {
+.h3 {
   font-size: 1.5em;
   margin: 0;
   background-color: #fff;
   margin-top: 10px;
 }
 
-h4 {
+.h4 {
   margin-top: 20px;
   color: #333;
 }
@@ -392,7 +392,7 @@ h4 {
     font-size: 24px;
 }
 
-h6 {
+.h6 {
   font-family: "Crimson Text", serif;
   font-weight: 600;
   font-style: normal;
@@ -400,6 +400,13 @@ h6 {
   margin: 0;
   background-color: #fff;
   margin-top: 10px;
+}
+
+.text { 
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #5a3d2f;
 }
 
 @media (max-width: 768px) {
