@@ -352,6 +352,15 @@ body, h1, h2, ul, li {
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
 }
 
+.card-title {
+  position: relative; /* Pastikan ia dalam konteks elemen .card */
+  top: -20px; /* Laraskan untuk letak di bawah imej */
+  font-size: 24px; /* Besarkan teks */
+  font-weight: bold; /* Tebalkan teks */
+  color: #333; /* Laraskan warna */
+  text-align: center;
+}
+
 .p {
   font-family: 'Playfair Display', serif;
   color: #555;
@@ -402,12 +411,7 @@ body, h1, h2, ul, li {
   margin-top: 10px;
 }
 
-.text { 
-    text-align: center;
-    font-size: 36px;
-    margin-bottom: 40px;
-    color: #5a3d2f;
-}
+
 
 @media (max-width: 768px) {
     h1 {
