@@ -354,8 +354,8 @@ body, h1, h2, ul, li {
 
 .card-title {
   position: relative; /* Pastikan ia dalam konteks elemen .card */
-  top: -20px; /* Laraskan untuk letak di bawah imej */
-  font-size: 24px; /* Besarkan teks */
+  top: 5px; /* Laraskan untuk letak di bawah imej */
+  font-size: 60px; /* Besarkan teks */
   font-weight: bold; /* Tebalkan teks */
   color: #333; /* Laraskan warna */
   text-align: center;
