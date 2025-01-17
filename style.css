@@ -360,7 +360,8 @@ p {
 h3 {
   font-size: 1.5em;
   margin: 0;
-    background-color: #fff;
+  background-color: #fff;
+  margin-top: 10px;
 }
 
 h4 {
